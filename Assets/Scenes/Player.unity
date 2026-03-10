@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 466794452}
   - component: {fileID: 466794451}
   - component: {fileID: 466794450}
+  - component: {fileID: 466794453}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -209,6 +210,93 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &466794453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466794449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8f71eb2a71cf04082d9c1dea7f206e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookSensitivity: 2
+  invertY: 0
+  panSpeed: 0.5
+  zoomSpeed: 10
+  shiftMultiplier: 3
+  smoothing: 0
+--- !u!1 &979629338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979629340}
+  - component: {fileID: 979629339}
+  m_Layer: 0
+  m_Name: weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &979629339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979629338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc13d4c18e90a924296d31acda6e72b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 466794451}
+  muzzlePoint: {fileID: 0}
+  fireRate: 600
+  fullAuto: 1
+  maxRange: 200
+  hitMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  baseDamage: 25
+  headshotMultiplier: 2
+  falloffStartDistance: 50
+  minDamageFraction: 0.25
+  magazineSize: 30
+  reserveAmmo: 90
+  reloadTime: 2
+  baseSpread: 0.5
+  movementSpread: 1.5
+  muzzleFlashPrefab: {fileID: 0}
+  muzzleFlashDuration: 0.05
+  impactEffectPrefab: {fileID: 0}
+  impactEffectDuration: 1
+  impactDecalPrefab: {fileID: 0}
+  impactDecalDuration: 10
+  tracerPrefab: {fileID: 0}
+  tracerDuration: 0.04
+--- !u!4 &979629340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979629338}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30.352789, y: -2.2767327, z: 17.963692}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -314,3 +402,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 466794452}
   - {fileID: 1764846594}
+  - {fileID: 979629340}
