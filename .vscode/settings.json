@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Mini3DProjects.sln"
+    "dotnet.defaultSolution": "miniproject3D.sln"
 }
