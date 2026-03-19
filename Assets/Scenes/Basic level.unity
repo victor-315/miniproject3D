@@ -590,7 +590,7 @@ Transform:
   m_GameObject: {fileID: 282458574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.03, y: 1.32, z: 6}
+  m_LocalPosition: {x: -1, y: 1, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -942,8 +942,8 @@ MonoBehaviour:
   falloffStartDistance: 50
   minDamageFraction: 0.25
   magazineSize: 30
-  reserveAmmo: 90
-  reloadTime: 2
+  reserveAmmo: 10000000
+  reloadTime: 0
   baseSpread: 0.5
   movementSpread: 1.5
   showTracers: 1
