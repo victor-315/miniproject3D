@@ -42,9 +42,12 @@ public class HitscanWeapon : MonoBehaviour
     void HandleFiring()
     {
         bool trigger = fullAuto ? Input.GetMouseButton(0) : Input.GetMouseButtonDown(0);
-        if (!trigger || Time.time < _nextFireTime) return;
+        bool fireX = fullAuto ? Input.GetKey(KeyCode.X)  : Input.GetKeyDown(KeyCode.X);
 
-        Fire();
+        if ((trigger || fireX) && Time.time >= _nextFireTime)
+        {
+            Fire();
+        }
     }
 
     void Fire()

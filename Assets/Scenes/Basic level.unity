@@ -1253,7 +1253,7 @@ MonoBehaviour:
   playerCamera: {fileID: 1956792323}
   muzzlePoint: {fileID: 1060520752}
   fireRate: 600
-  fullAuto: 1
+  fullAuto: 0
   maxRange: 200
   hitMask:
     serializedVersion: 2
