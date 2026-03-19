@@ -60,7 +60,7 @@ public class GridshotSpawner : MonoBehaviour
         }
 
         // SHOOTING
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) or Input.GetKeyDown(KeyCode.X))
         {
             shotsFired++;
             
