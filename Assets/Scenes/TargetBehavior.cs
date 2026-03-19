@@ -15,7 +15,7 @@ public class TargetBehavior : MonoBehaviour
     {
         if (spawner != null)
         {
-            spawner.OnTargetDestroyed(myPosition);
+            spawner.OnTargetHit(myPosition);
         }
 
         Destroy(gameObject);
